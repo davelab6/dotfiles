@@ -6,6 +6,7 @@ alias lint='java -jar /Users/dcrossland/googlefontdirectory/tools/lint/dist/lint
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export HISTFILESIZE=10000
 alias cp='rsync -a --stats --progress'
+alias ccp='cp'
 alias rmm='/bin/rm'
 function rm() {
    mv "${@}" /tmp/
