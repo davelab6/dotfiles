@@ -6,7 +6,7 @@ alias lint='java -jar /Users/dcrossland/googlefontdirectory/tools/lint/dist/lint
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export HISTFILESIZE=10000
 alias cp='rsync -a --stats --progress'
-alias ccp='cp'
+alias ccp='/bin/cp'
 alias rmm='/bin/rm'
 function rm() {
    mv "${@}" /tmp/
@@ -23,3 +23,6 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias githubupdate='cd ~/src/github.com/; for repo in `ls -1d */*/`; do echo $repo; pushd . ; cd $repo; git pull; popd; done;'
 alias gp='git pull'
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+fi
