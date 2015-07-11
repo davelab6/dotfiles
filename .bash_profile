@@ -1,17 +1,19 @@
 alias wifimac='spoof-mac randomize wi-fi'
-export PATH=/Users/dcrossland/src/fontbakery/scripts:/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/Users/dcrossland/.local/bin:$PATH
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
+export PATH=/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/Users/dcrossland/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/python:$PATH
 alias chownlocal='sudo chown -R dcrossland:wheel /usr/local'
 alias lint='java -jar /Users/dcrossland/googlefontdirectory/tools/lint/dist/lint.jar $1'
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export HISTFILESIZE=10000
+export EDITOR="mate -w"
+export VISUAL="mate -w"
+export HOMEBREW_EDITOR="mate -w"
 alias cp='rsync -a --stats --progress'
-alias ccp='/bin/cp'
-alias rmm='/bin/rm'
+alias c='/bin/cp'
+alias r='/bin/rm'
 function rm() {
    mv "${@}" /tmp/
 }
-alias ctup='rsync -vvaP /Users/dcrossland/src/github.com/craftingtype/craftingtype.com/*/*/register*html tug.org:ct/'
+alias ctup='rsync -vvaP /Users/dcrossland/src/github.com/craftingtype/craftingtype.com/*/*/register*html dcrossland@tug.org:ct/'
 alias ul='ssh -vv understandinglimited@understandinglimited.com'
 alias ffroot='ssh -vv root@fontforge.default.fontforge.uk0.bigv.io'
 alias ffdc='ssh -vv davelab6@fontforge.default.fontforge.uk0.bigv.io'
