@@ -136,7 +136,7 @@ spoofmac,
 
 a few tools,
 
-    brew install hub bash-git-prompt wget ttfautohint irssi;
+    brew install hub bash-git-prompt wget ttfautohint irssi tree rename;
 	brew install homebrew/x11/meld;
 
 Install bram's web font tools 
