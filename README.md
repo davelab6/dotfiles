@@ -113,6 +113,7 @@ Finder prefs: Open in Home, Search in current folder
 - [x] Camtasia 2.app
 - [x] Adobe CC
 - [x] Adobe Reader.app
+- [x] osxfonttools.dmg (fetched from http://developer.apple.com)
 
 ### App Store
 
