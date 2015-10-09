@@ -174,4 +174,5 @@ I keep some handy symlinks in my home:
 
 ## python
 
-    sudo easy_install install pip;
+    sudo easy_install pip;
+    sudo pip install beautifulsoup4;
