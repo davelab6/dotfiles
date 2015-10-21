@@ -88,6 +88,10 @@ Dont blink caret
 
 Finder prefs: Open in Home, Search in current folder
 
+Enable `locate`
+
+    sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
 ### git
 
      git config --global user.name "Dave Crossland" ;
