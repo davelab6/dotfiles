@@ -10,6 +10,7 @@ Below are some notes I took when setting up a new mac with OS X 10.10.
 * Display: Scaled, 4/5
 * General: Highlight Color: Yellow
 * Desktop: Black
+* Accessibility: Zoom, use Command, unset Smooth
 * Screensaver: Set message to contact info 
 ```
 dave@lab6.com
