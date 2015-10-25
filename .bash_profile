@@ -2,7 +2,6 @@ alias wifimac='spoof-mac randomize wi-fi'
 export PATH=/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/Users/dcrossland/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/python:$PATH
 alias chownlocal='sudo chown -R dcrossland:wheel /usr/local'
 alias lint='java -jar /Users/dcrossland/googlefontdirectory/tools/lint/dist/lint.jar $1'
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export HISTFILESIZE=10000
 export EDITOR="mate -w"
 export VISUAL="mate -w"
