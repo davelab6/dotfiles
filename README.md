@@ -10,19 +10,25 @@ Below are some notes I took when setting up a new mac with OS X 10.10.
 * Display: Scaled, 4/5
 * General: Highlight Color: Yellow
 * Desktop: Black
-* Screensaver: Set message to contact info
+* Accessibility: Zoom, use Command, unset Smooth
+* Screensaver: Set message to contact info 
+```
+dave@lab6.com
+@davelab6 
++44 777 3383 772
++1 415 343 5226
+```
 * Dock: scale effect, autohide
-* Mission Control: Hot corners, lower left shows desktop, lower right is nothing
+* Mission Control: Do not rearrange. Dashboard as space. Hot corners, lower left shows desktop, lower right is nothing. 
 * Language: Region is UK
-* Keyboard: Shortcut, all controls. 
-* Trackpad: Tap to click on, Look up off, scroll direction off, 
+* Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, turn off Caps Lock; Shortcut, all controls. Input Sources, add British, remove US.
+* Trackpad: Tap to click on, Look up off, scroll direction off, Swipe between pages with 3 fingers, Swipe between full-screen app off, Notification Center off
 * Date and Time: Set timezone, use 24 hour clock, show date
 * Accessibility: Use scroll gesture (Command), no smoothing, yes follow
 
-Terminal - enable alt-arrows to move words, alt-d to delete next word
-* Preference, Profiles, Keyboard, Use Option Key as Meta
+Terminal - to enable alt-arrows to move words, alt-d to delete next word, go to Preference, Profiles, Keyboard, and set Use Option Key as Meta
 
-Set Dock size, transparent hidden windows, 
+Set Dock size, transparent hidden windows
 
     defaults write com.apple.dock tilesize -int 24; 
     defaults write com.apple.Dock showhidden -bool YES;
@@ -83,6 +89,10 @@ Dont blink caret
 
 Finder prefs: Open in Home, Search in current folder
 
+Enable `locate`
+
+    sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
 ### git
 
      git config --global user.name "Dave Crossland" ;
@@ -119,7 +129,6 @@ Finder prefs: Open in Home, Search in current folder
 
 dave@lab6.com
 - [x] Wake Up Time.app
-- [x] Flycut. Set icon, store 99/99. System prefs, User, Login Items, add it. 
 
 ### brew
 
@@ -154,13 +163,17 @@ Install fontforge python
 Install cask and some apps
 
     brew install caskroom/cask/brew-cask
-    brew cask install glyphs google-hangouts the-unarchiver inkscape gimp fontforge flycut dropbox audacity caffeine chrome-devtools google-chrome codekit cyberduck dia cocoadialog disk-inventory-x flux fontprep github githubpulse google-earth grandperspective jumpcut lighttable monolingual monotype-skyfonts nocturne robofont sequel-pro skim skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre coconutbattery ipartition ntfsmounter unicodechecker macdown;
+    brew cask install glyphs google-hangouts the-unarchiver inkscape gimp fontforge flycut dropbox audacity keepingyouawake chrome-devtools google-chrome codekit cyberduck dia cocoadialog disk-inventory-x flux fontprep github-desktop githubpulse google-earth grandperspective lighttable monolingual skyfonts nocturne robofont sequel-pro skim skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver;
 
 Run caffeine and set to run on login.
 
-Chrome, install app: gmail offline. Prefs, open tabs from last time
+Chrome, install app: gmail offline. Prefs, continue where you left off
 
-Chrome Canary, install app: gmail offline. Prefs, open tabs from last time
+Chrome Canary, install app: gmail offline. Prefs, continue where you left off
+
+Flycut. Run on login, save after each clip, store 99/99, black icon. 
+
+Monolingual, run and remove unneeded locales
 
 ## links
 
@@ -174,4 +187,5 @@ I keep some handy symlinks in my home:
 
 ## python
 
-    sudo easy_install install pip;
+    sudo easy_install pip;
+    sudo pip install beautifulsoup4;
