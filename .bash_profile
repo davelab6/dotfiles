@@ -18,7 +18,8 @@ alias ffroot='ssh -vv root@fontforge.default.fontforge.uk0.bigv.io'
 alias ffdc='ssh -vv davelab6@fontforge.default.fontforge.uk0.bigv.io'
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 alias al3='pyfontaine --set "Adobe Latin 3"'
-alias ytd='echo youtube-dl --write-description --write-info-json -c -o "%(upload_date)s %(uploader_id)s - %(title)s - %(format)s - %(id)s" -F'
+alias ytdl='youtube-dl --write-description --write-info-json -c -o "%(upload_date)s %(uploader_id)s - %(title)s - %(format)s - %(id)s" -F ${@}'
+alias ytdf='youtube-dl --write-description --write-info-json -c -o "%(upload_date)s %(uploader_id)s - %(title)s - %(format)s - %(id)s" -f ${@}'
 alias git=hub
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
@@ -28,3 +29,4 @@ alias gp='git pull'
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+alias grp='git reset --hard ; git pull'
