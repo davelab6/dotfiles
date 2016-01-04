@@ -30,3 +30,4 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 alias grp='git reset --hard ; git pull'
+alias gd='git diff'
