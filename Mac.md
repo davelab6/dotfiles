@@ -180,6 +180,8 @@ Flycut. Run on login, save after each clip, store 99/99, black icon.
 
 Monolingual, run and remove unneeded locales
 
+Download and install synergy from <http://synergy-project.org/download>
+
 ## links
 
 I keep some handy symlinks in my home:
