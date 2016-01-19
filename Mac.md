@@ -147,7 +147,7 @@ spoofmac,
 a few tools,
 
     brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl;
-    brew install homebrew/x11/meld httrack; 
+    brew install homebrew/x11/meld httrack jpegoptim; 
 
 Install bram's web font tools 
 
@@ -169,6 +169,7 @@ Install cask and some apps
 
     brew install caskroom/cask/brew-cask
     brew cask install glyphs google-hangouts the-unarchiver inkscape gimp fontforge flycut dropbox audacity keepingyouawake chrome-devtools google-chrome codekit cyberduck dia cocoadialog disk-inventory-x flux fontprep github-desktop githubpulse google-earth grandperspective lighttable monolingual skyfonts nocturne robofont sequel-pro skim skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver captur;
+    brew install Caskroom/cask/captur
 
 Run caffeine and set to run on login.
 
