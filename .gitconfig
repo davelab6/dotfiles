@@ -1,0 +1,18 @@
+[push]
+	default = simple
+[user]
+	name = Dave Crossland
+	email = dave@lab6.com
+[core]
+	editor = mate -w
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[http]
+	cookiefile = /Users/dcrossland/.gitcookies
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
