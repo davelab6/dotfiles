@@ -147,7 +147,7 @@ spoofmac,
 a few tools,
 
     brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl;
-    brew install homebrew/x11/meld httrack jpegoptim; 
+    brew install homebrew/x11/meld httrack jpegoptim watch; 
 
 Install bram's web font tools 
 
