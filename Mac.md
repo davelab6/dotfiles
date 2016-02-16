@@ -1,17 +1,17 @@
 # davelab6 dotfiles for Mac OS X
 
 This repo contains some of my dotfile.
-Below are some notes I took when setting up a new mac with OS X 10.10.
+Below are some notes I took when setting up a new mac with OS X 10.11.
 
 ## Settings
 
 ### System Preferences
 
+* General: Highlight Color: Yellow. Ask to keep changes. Do not close windows. 
 * Display: Scaled, 4/5
-* General: Highlight Color: Yellow
 * Desktop: Black
 * Accessibility: Zoom, use Command, unset Smooth
-* Screensaver: Set message to contact info 
+* Screensaver: Start after 2 mins. Show with clock. Set message to contact info:
 ```
 dave@lab6.com
 @davelab6 
@@ -19,12 +19,13 @@ dave@lab6.com
 +1 415 343 5226
 ```
 * Dock: scale effect, autohide
-* Mission Control: Do not rearrange. Dashboard as space. Hot corners, lower left shows desktop, lower right is nothing. 
+* Mission Control: Do not rearrange. Dashboard as space. Hot Corners, set bottom left to desktop, bottom right null, top right screensaver. 
 * Language: Region is UK
-* Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, turn off Caps Lock; Shortcut, all controls. Input Sources, add British, remove US.
+* Energy Saver: Schedule, sleep at 22:00 every day.
+* Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, turn off Caps Lock; Shortcut, all controls. If UK machine, Input Sources, add British, remove US.
 * Trackpad: Tap to click on, Look up off, scroll direction off, Swipe between pages with 3 fingers, Swipe between full-screen app off, Notification Center off
 * Date and Time: Set timezone, use 24 hour clock, show date
-* Accessibility: Use scroll gesture (Command), no smoothing, yes follow
+* Accessibility: Zoom, Yes use scroll gesture (Command), no smoothing, yes follow
 
 Terminal - to enable alt-arrows to move words, alt-d to delete next word, go to Preference, Profiles, Keyboard, and set Use Option Key as Meta
 
@@ -78,7 +79,6 @@ Don’t scroll bounce on the end:
 
     defaults write -g NSScrollViewRubberbanding -int 0;
 
-
 Disable 2 finger chrome swipe
 
     defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
@@ -104,31 +104,16 @@ Enable `locate`
 
 ### Installer
 
-- [x] XCode.app
-- [x] VMware Fusion.app
-- [x] TextMate.app
-- [x] SnipIt
-- [x] Opera
-- [x] mercurial
-- [x] MacTex
-- [x] MacIrssi
-- [x] LibreOffice.app
-- [x] Java
-- [x] Snagit.app
-- [x] gpylint
-- [x] iLife
-- [x] Google Chrome Canary.app
-- [x] Google Chrome.app
-- [x] Firefox.app
-- [x] Camtasia 2.app
-- [x] Adobe CC
-- [x] Adobe Reader.app
-- [x] osxfonttools.dmg (fetched from http://developer.apple.com)
+- XCode.app
+- VMware Fusion.app
+- iLife
+- Adobe CC
+- osxfonttools.dmg (fetched from http://developer.apple.com)
 
 ### App Store
 
 dave@lab6.com
-- [x] Wake Up Time.app
+- Wake Up Time.app
 
 ### brew
 
@@ -146,8 +131,8 @@ spoofmac,
 
 a few tools,
 
-    brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl;
-    brew install homebrew/x11/meld httrack jpegoptim watch icdiff; 
+    brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl \
+    irssi homebrew/gui/meld httrack jpegoptim watch icdiff; 
 
 Install bram's web font tools 
 
@@ -167,8 +152,17 @@ Install command-not-found
 
 Install cask and some apps
 
-    brew install caskroom/cask/brew-cask
-    brew cask install glyphs google-hangouts the-unarchiver inkscape gimp fontforge flycut dropbox audacity keepingyouawake chrome-devtools google-chrome codekit cyberduck dia cocoadialog disk-inventory-x flux fontprep github-desktop githubpulse google-earth grandperspective lighttable monolingual skyfonts nocturne robofont sequel-pro skim skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver captur;
+    brew install caskroom/cask/brew-cask;
+    brew tap caskroom/versions;
+    brew cask install glyphs google-hangouts the-unarchiver inkscape gimp \
+        fontforge flycut dropbox audacity keepingyouawake chrome-devtools \
+        google-chrome codekit cyberduck dia cocoadialog disk-inventory-x \
+        flux fontprep github-desktop githubpulse google-earth grandperspective \
+        lighttable monolingual skyfonts nocturne robofont sequel-pro skim \
+        skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
+        coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
+        captur textmate opera libreoffice google-chrome google-chrome-canary \
+        firefox firefox-nightly adobe-reader java;
     brew install Caskroom/cask/captur
 
 Run caffeine and set to run on login.
@@ -196,4 +190,4 @@ I keep some handy symlinks in my home:
 ## python
 
     sudo easy_install pip;
-    sudo pip install beautifulsoup4;
+    sudo pip install beautifulsoup4 Mercurial;
