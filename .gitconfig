@@ -1,8 +1,8 @@
-[push]
-	default = simple
 [user]
 	name = Dave Crossland
 	email = dave@lab6.com
+[push]
+	default = simple
 [core]
 	editor = mate -w
 [filter "lfs"]

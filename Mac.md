@@ -181,13 +181,16 @@ Download and install synergy from <http://synergy-project.org/download>
 
 ## links
 
-I keep some handy symlinks in my home:
+I keep some handy symlinks in my home, and links to files stored in this repo:
 
     ln -s Documents/GOOG/FONTDIR/googlefontdirectory-clean googlefontdirectory ;
     ln -s src/github.com/davelab6 davelab6 ;
     ln -s src/github.com/google/fonts fonts ;
     ln -s src/googlefontdirectory-messed googlefontdirectory-messed ;
     ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.bash_profile ~/.bash_profile ;
+	ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.gitconfig ~/.gitconfig ;
+	ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.gitignore ~/.gitignore ;
+    mkdir -p ~/.irssi; ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/irssi-config ~/.irssi/config ;
 
 ## python
 

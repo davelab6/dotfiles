@@ -32,3 +32,6 @@ fi
 alias grp='git reset --hard ; git pull'
 alias gd='git diff'
 alias gitcorp='git credential-corpsso login; git config user.email dcrossland@google.com;'
+if brew command command-not-found-init > /dev/null; then
+  eval "$(brew command-not-found-init)";
+fi
