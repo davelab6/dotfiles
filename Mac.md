@@ -156,22 +156,24 @@ Install cask and some apps
     brew tap caskroom/versions;
     brew cask install glyphs google-hangouts the-unarchiver inkscape gimp \
         fontforge flycut dropbox audacity keepingyouawake chrome-devtools \
-        google-chrome codekit cyberduck dia cocoadialog disk-inventory-x \
+        codekit cyberduck cocoadialog disk-inventory-x \
         flux fontprep github-desktop githubpulse google-earth grandperspective \
-        lighttable monolingual skyfonts nocturne robofont sequel-pro skim \
+        lighttable monolingual skyfonts robofont sequel-pro skim \
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
         firefox firefox-nightly adobe-reader java;
     brew install Caskroom/cask/captur
 
-Run caffeine and set to run on login.
+Run KeepingYouAwake and set to run on login.
+
+Run flux, start at login, set ZIP code.
 
 Chrome, install app: gmail offline. Prefs, continue where you left off
 
 Chrome Canary, install app: gmail offline. Prefs, continue where you left off
 
-Flycut. Run on login, save after each clip, store 99/99, black icon. 
+Flycut. Run on login, save after each clip, store 99, show 99, black icon, set hotkey to shift control option command v.
 
 Monolingual, run and remove unneeded locales
 
