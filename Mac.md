@@ -108,7 +108,6 @@ Enable `locate`
 - VMware Fusion.app
 - iLife
 - Adobe CC
-- osxfonttools.dmg (fetched from http://developer.apple.com)
 
 ### App Store
 
@@ -134,11 +133,6 @@ a few tools,
     brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl \
     irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck; 
 
-Install bram's web font tools 
-
-    brew tap bramstein/webfonttools; brew update; 
-    brew install sfnt2woff sfnt2woff-zopfli woff2 ttf2eot sfntly fonttools; 
-
 Install fontforge python
 
     brew install fontforge --HEAD --with-giflib --with-extra-tools;
@@ -146,7 +140,7 @@ Install fontforge python
 Install command-not-found
 
     brew tap homebrew/command-not-found;
-	brew install command-not-found;
+    brew install command-not-found;
 
 TODO: figure out how to get that working...
 
@@ -198,3 +192,45 @@ I keep some handy symlinks in my home, and links to files stored in this repo:
 
     sudo easy_install pip;
     sudo pip install beautifulsoup4 Mercurial;
+
+## font toolbox
+
+Install `osxfonttools.dmg` from http://developer.apple.com
+
+    cd ~/Downloads/ ;
+    hdiutil attach osxfonttools.dmg ;
+    mkdir -p /tmp/ftx ;
+    cd /tmp/ftx ;
+    cp "/Volumes/OS X Font Tools/OS X Font Tools.pkg" . ;
+    xar -xf "OS X Font Tools.pkg" ;
+    cd fontTools.pkg/ ;
+    cat Payload | gunzip -dc | cpio -i ;
+    sudo mv ftx* /usr/local/bin/
+
+Install basic web font tools:
+
+    brew tap davelab6/webfonttools; 
+    brew update; 
+    brew install sfnt2woff sfnt2woff-zopfli woff2 ttf2eot sfntly;
+    brew install ots --HEAD;
+
+Install fonttools from git master:
+
+    sudo pip install git+git://github.com/behdad/fonttools.git;
+
+Install fontbakery from git master:
+
+    mkdir -p ~/src/github.com/googlefonts;
+    cd ~/src/github.com/googlefonts;
+    git clone git@github.com:googlefonts/fontbakery.git;
+    cd fontbakery;
+    sudo pip install git+git://github.com/googlefonts/fontbakery.git;
+
+Install fontmake
+    
+    mkdir -p ~/src/github.com/googlei18n;
+    cd ~/src/github.com/googlei18n;
+    git clone git@github.com:googlei18n/fontmake;
+    cd fontmake;
+    sudo python -m pip install -r requirements.txt;
+    sudo python setup.py develop;
