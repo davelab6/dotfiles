@@ -132,7 +132,7 @@ spoofmac,
 a few tools,
 
     brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl \
-    irssi homebrew/gui/meld httrack jpegoptim watch icdiff; 
+    irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck; 
 
 Install bram's web font tools 
 
@@ -146,7 +146,9 @@ Install fontforge python
 Install command-not-found
 
     brew tap homebrew/command-not-found;
-    if brew command command-not-found-init > /dev/null; then eval "$(brew command-not-found-init)"; fi
+	brew install command-not-found;
+
+TODO: figure out how to get that working...
 
 ### casks
 
