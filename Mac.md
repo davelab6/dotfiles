@@ -1,7 +1,6 @@
-# davelab6 dotfiles for Mac OS X
+# davelab6 installation notes for Mac OS X
 
-This repo contains some of my dotfile.
-Below are some notes I took when setting up a new mac with OS X 10.11.
+Here are steps I take when setting up a new mac with OS X 10.11.
 
 ## Settings
 
