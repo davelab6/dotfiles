@@ -171,9 +171,9 @@ Run KeepingYouAwake and set to run on login.
 
 Run flux, start at login, set ZIP code.
 
-Chrome, install app: gmail offline. Prefs, continue where you left off
+Chrome, install app: gmail offline. Prefs, continue where you left off. Go to chrome://flags and enable 'Save Page as MHTML'
 
-Chrome Canary, install app: gmail offline. Prefs, continue where you left off
+Chrome Canary, install app: gmail offline. Prefs, continue where you left off. Go to chrome://flags and enable 'Save Page as MHTML'
 
 Flycut. Run on login, save after each clip, store 99, show 99, black icon, set hotkey to shift control option command v.
 
