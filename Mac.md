@@ -99,6 +99,10 @@ Enable `locate`
      git config --global push.default simple;
      git config --global core.editor "mate -w";
 
+### App preferences
+
+Finder: Open in home. View, options: Browse in col view.
+
 ## Installations
 
 ### Installer
