@@ -218,6 +218,12 @@ Install fonttools from git master:
 
     sudo pip install git+git://github.com/behdad/fonttools.git;
 
+Install pyfontaine:
+
+    sudo CFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib pip install pyicu;
+    sudo pip install git+git://github.com/davelab6/pyfontaine.git;
+
+
 Install fontbakery from git master:
 
     mkdir -p ~/src/github.com/googlefonts;
