@@ -244,10 +244,17 @@ Install fontbakery from git master:
     sudo pip install git+git://github.com/googlefonts/fontbakery.git;
 
 Install fontmake
-    
+
     mkdir -p ~/src/github.com/googlei18n;
     cd ~/src/github.com/googlei18n;
     git clone git@github.com:googlei18n/fontmake;
     cd fontmake;
     sudo python -m pip install -r requirements.txt;
     sudo python setup.py develop;
+
+Make glyphs use the latest ttfautohint:
+
+    for exe in `ls -1 /opt/homebrew-cask/Caskroom/glyphs/*/Glyphs.app/Contents/PlugIns/OTF.glyphsFileFormat/Contents/Resources/ttfautohint`; do \
+      cp /usr/local/Cellar/ttfautohint/1.5/bin/ttfautohint $exe; \
+	done;
+
