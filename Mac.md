@@ -194,7 +194,7 @@ I keep some handy symlinks in my home, and links to files stored in this repo:
 ## python
 
     sudo easy_install pip;
-    sudo pip install beautifulsoup4 Mercurial;
+    sudo pip install beautifulsoup4 Mercurial ipython;
 
 ## font toolbox
 
@@ -225,7 +225,6 @@ Install pyfontaine:
 
     sudo CFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib pip install pyicu;
     sudo pip install git+git://github.com/davelab6/pyfontaine.git;
-
 
 Install fontbakery from git master:
 
