@@ -161,7 +161,7 @@ Install cask and some apps
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
-        firefox firefox-nightly adobe-reader java;
+        firefox firefox-nightly adobe-reader java insync;
     brew install Caskroom/cask/captur
 
 Run KeepingYouAwake and set to run on login.
@@ -177,6 +177,13 @@ Flycut. Run on login, save after each clip, store 99, show 99, black icon, set h
 Monolingual, run and remove unneeded locales
 
 Download and install synergy from <http://synergy-project.org/download>
+
+InSync, Settings, Don't show popups. Account:
+* Selective, My Drive, tick show files, tick partials, untick "1-Archive". 
+* Selective, Shared: tick show files, tick partials.
+* Convert: to OpenDocument
+* Account: sync `Personal` to `~/Documents`
+
 
 ## links
 
