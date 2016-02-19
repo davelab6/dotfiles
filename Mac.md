@@ -179,7 +179,9 @@ Monolingual, run and remove unneeded locales
 Download and install synergy from <http://synergy-project.org/download>
 
 InSync, Settings, Don't show popups. Account:
-* Selective, My Drive, tick show files, tick partials, untick "1-Archive". 
+* Selective, My Drive, tick show files, tick partials, untick:
+    * 1-Archive
+	* Google Photos
 * Selective, Shared: tick show files, tick partials.
 * Convert: to OpenDocument
 * Account: sync `Personal` to `~/Documents`
