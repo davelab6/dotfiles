@@ -133,7 +133,7 @@ spoofmac,
 
 a few tools,
 
-    brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl \
+    brew install hub bash-git-prompt wget irssi tree rename youtube-dl \
     irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck pngcrush optipng; 
 
 Install fontforge python
@@ -252,9 +252,6 @@ Install fontmake
     sudo python -m pip install -r requirements.txt;
     sudo python setup.py develop;
 
-Make glyphs use the latest ttfautohint:
+Install the latest version of ttfautohint from git master:
 
-    for exe in `ls -1 /opt/homebrew-cask/Caskroom/glyphs/*/Glyphs.app/Contents/PlugIns/OTF.glyphsFileFormat/Contents/Resources/ttfautohint`; do \
-      cp /usr/local/Cellar/ttfautohint/1.5/bin/ttfautohint $exe; \
-	done;
-
+    brew install --HEAD ttfautohint --with-qt;
