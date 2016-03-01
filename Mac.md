@@ -134,7 +134,7 @@ spoofmac,
 a few tools,
 
     brew install hub bash-git-prompt wget ttfautohint irssi tree rename youtube-dl \
-    irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck; 
+    irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck pngcrush optipng; 
 
 Install fontforge python
 
