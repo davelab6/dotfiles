@@ -32,5 +32,10 @@ fi
 alias grp='git reset --hard ; git pull'
 alias gd='git diff'
 alias gitcorp='git credential-corpsso login; git config user.email dcrossland@google.com;'
-source /usr/local/Library/Taps/homebrew/homebrew-command-not-found/handler.sh ;
 eval "$(thefuck --alias)";
+if brew command command-not-found-init > /dev/null; then
+  eval "$(brew command-not-found-init)";
+fi
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi

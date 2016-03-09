@@ -140,12 +140,12 @@ Install fontforge python
 
     brew install fontforge --HEAD --with-giflib --with-extra-tools;
 
-Install command-not-found
+Install command-not-found and upgrade bash,
 
-    brew tap homebrew/command-not-found;
-    brew install command-not-found;
-
-TODO: figure out how to get that working...
+    brew tap homebrew/command-not-found
+    brew update && brew install bash
+    sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+    chsh -s /usr/local/bin/bash 
 
 ### casks
 
