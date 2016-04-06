@@ -18,6 +18,9 @@ channels = (
   { name = "##fonts"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#metapolator"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#userops"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#sugar"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#schoolserver"; chatnet = "freenode"; autojoin = "Yes"; }
+  { name = "#sugar-meeting"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
