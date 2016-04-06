@@ -53,7 +53,7 @@ Select text in quicklook, always show
 
 Don’t create `.DS_store` files
 
-    defaults write com.apple.desktopservices DSDontWriteNetworkStores TRUE;
+    defaults write com.apple.desktopservices DSDontWriteNetworkStores true;
 
 Show file extensions
 
