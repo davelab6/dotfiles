@@ -1,43 +1,15 @@
 servers = (
-  {
-    address = "chat.freenode.net";
-    chatnet = "freenode";
-    port = "6667";
-    autoconnect = "yes";
-  },
+  { address = "chat.freenode.net"; chatnet = "freenode"; port = "6667"; autoconnect = "yes"; },
   { address = "irc.efnet.org"; chatnet = "efnet"; port = "6667"; },
   { address = "irc.dal.net"; chatnet = "dalnet"; port = "6667"; },
-  { 
-    address = "irc.quakenet.org";
-    chatnet = "quakenet";
-    port = "6667";
-  }
+  { address = "irc.quakenet.org";chatnet = "quakenet"; port = "6667"; }
 );
 
 chatnets = {
-  efnet = { 
-    type = "IRC";
-    max_kicks = "4";
-    max_msgs = "3";
-    max_whois = "1";
-  };
-  freenode = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "4";
-    max_whois = "1";
-  };
-  dalnet = {
-    type = "IRC";
-    max_kicks = "4";
-    max_msgs = "3";
-    max_whois = "30";
-  };
-  quakenet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "3";
-    max_whois = "30";
+  efnet = { type = "IRC"; max_kicks = "4"; max_msgs = "3"; max_whois = "1"; };
+  freenode = { type = "IRC"; max_kicks = "1"; max_msgs = "4"; max_whois = "1"; };
+  dalnet = { type = "IRC"; max_kicks = "4"; max_msgs = "3"; max_whois = "30"; };
+  quakenet = { type = "IRC"; max_kicks = "1"; max_msgs = "3"; max_whois = "30";
   };
 };
 
