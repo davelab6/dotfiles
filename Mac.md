@@ -111,6 +111,9 @@ Finder: Open in home. View, options: Browse in col view.
 - VMware Fusion.app
 - iLife
 - Adobe CC
+- FontLab 5.x
+
+Run FontLab and register it.
 
 ### App Store
 
