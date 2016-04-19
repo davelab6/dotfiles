@@ -259,3 +259,7 @@ Install fontmake
 Install the latest version of ttfautohint from git master:
 
     brew install --HEAD ttfautohint --with-qt;
+
+# Misc
+
+https://github.com/wavexx/screenkey
