@@ -237,7 +237,7 @@ Install basic web font tools:
 
     brew tap davelab6/webfonttools; 
     brew update; 
-    brew install sfnt2woff sfnt2woff-zopfli woff2 ttf2eot sfntly;
+    brew install sfnt2woff sfnt2woff-zopfli woff2 ttf2eot sfntly vfb2ufo;
     brew install ots --HEAD;
 
 Install fonttools from git master:
