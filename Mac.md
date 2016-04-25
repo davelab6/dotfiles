@@ -151,6 +151,16 @@ Install command-not-found and upgrade bash,
     sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
     chsh -s /usr/local/bin/bash 
 
+Install quicklook plugins for better Finder previews,
+
+    brew install \
+    Caskroom/cask/animated-gif-quicklook     Caskroom/cask/quicklook-json        \
+    Caskroom/cask/emin-webpquicklook         Caskroom/cask/quicklook-pfm         \
+    Caskroom/cask/epubquicklook              Caskroom/cask/quicklookei           \
+    Caskroom/cask/osirix-quicklook           Caskroom/cask/ttscoff-mmd-quicklook \
+    Caskroom/cask/quicklook-csv              Caskroom/cask/webpquicklook;
+    qlmanage -r;
+
 ### casks
 
 Install cask and some apps
