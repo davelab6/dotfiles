@@ -40,3 +40,5 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+# make a command for sorting by length, like 
+# cat testfile | awk '{ print length, $0 }' | sort -n | cut -d" " -f2-
