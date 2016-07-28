@@ -130,15 +130,13 @@ Install homebrew itself,
 spoofmac,
 
     brew install spoof-mac;
-    sudo cp -fv /usr/local/opt/spoof-mac/*.plist /Library/LaunchDaemons;
-    sudo chown root /Library/LaunchDaemons/homebrew.mxcl.spoof-mac.plist;
-    sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.spoof-mac.plist;
+    sudo brew services start spoof-mac;
 
 a few tools,
 
     brew install hub bash-git-prompt wget irssi tree rename youtube-dl \
     irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck pngcrush \
-		optipng pandoc most; 
+    optipng pandoc most; 
 
 Install fontforge python
 
@@ -146,10 +144,11 @@ Install fontforge python
 
 Install command-not-found and upgrade bash,
 
-    brew tap homebrew/command-not-found
-    brew update && brew install bash
-    sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-    chsh -s /usr/local/bin/bash 
+    brew tap homebrew/command-not-found;
+    brew update && brew install bash;
+    sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells';
+    chsh -s /usr/local/bin/bash;
+    brew install command-not-found;
 
 Install quicklook plugins for better Finder previews,
 
@@ -165,8 +164,8 @@ Install quicklook plugins for better Finder previews,
 
 Install cask and some apps
 
-    brew install caskroom/cask/brew-cask;
     brew tap caskroom/versions;
+    brew cask install xquartz;
     brew cask install glyphs google-hangouts the-unarchiver inkscape gimp \
         fontforge flycut dropbox audacity keepingyouawake chrome-devtools \
         codekit cyberduck cocoadialog disk-inventory-x \
@@ -175,8 +174,7 @@ Install cask and some apps
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
-        firefox firefox-nightly adobe-reader java insync;
-    brew install Caskroom/cask/captur
+        firefox firefox-nightly adobe-reader java insync captur;
 
 Run KeepingYouAwake and set to run on login.
 
@@ -205,14 +203,23 @@ InSync, Settings, Don't show popups. Account:
 
 I keep some handy symlinks in my home, and links to files stored in this repo:
 
-    ln -s Documents/GOOG/FONTDIR/googlefontdirectory-clean googlefontdirectory ;
+    rsync -vvaP SERVER:.ssh/ .ssh/ ;
+    cd ;
+    mkdir -p src/github.com/davelab6 ;
     ln -s src/github.com/davelab6 davelab6 ;
+    cd davelab6 ;
+    git clone git@github.com:davelab6/dotfiles.git ;
+    cd ;
+    ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.bash_profile .bash_profile ;
+    ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.gitconfig .gitconfig ;
+    ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.gitignore .gitignore ;
+    mkdir .irssi ; 
+    ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/irssi-config .irssi/config ;
+    mkdir -p src/github.com/google ;
+    cd src/github.com/google ;
+    git clone git@github.com:google/fonts.git ;
+    cd ;
     ln -s src/github.com/google/fonts fonts ;
-    ln -s src/googlefontdirectory-messed googlefontdirectory-messed ;
-    ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.bash_profile ~/.bash_profile ;
-	ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.gitconfig ~/.gitconfig ;
-	ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/.gitignore ~/.gitignore ;
-    mkdir -p ~/.irssi; ln -s /Users/dcrossland/src/github.com/davelab6/dotfiles/irssi-config ~/.irssi/config ;
 
 ## python
 
