@@ -26,8 +26,9 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias githubupdateall='cd ~/src/github.com/; for repo in `ls -1d */*/`; do echo $repo; pushd . ; cd $repo; git pull; echo $repo " complete"; popd; done;'
 alias githubupdatehere='for repo in `ls -1d *`; do echo $repo; pushd . ; cd $repo; git pull; echo $repo " complete"; popd; done;'
 alias gp='git pull'
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+  GIT_PROMPT_THEME=Default
+  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 alias grp='git reset --hard ; git pull'
 alias gd='git diff'
