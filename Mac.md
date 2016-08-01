@@ -136,7 +136,7 @@ a few tools,
 
     brew install hub bash-git-prompt wget irssi tree rename youtube-dl \
     irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck pngcrush \
-    optipng pandoc most; 
+    optipng pandoc most ffmpeg libav; 
 
 Install fontforge python
 
@@ -223,8 +223,7 @@ I keep some handy symlinks in my home, and links to files stored in this repo:
 
 ## python
 
-    sudo easy_install pip;
-    sudo pip install beautifulsoup4 Mercurial ipython ipdb;
+    pip install --user --upgrade beautifulsoup4 Mercurial ipython ipdb;
 
 ## font toolbox
 
