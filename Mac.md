@@ -101,13 +101,17 @@ Enable `locate`
 
 ### App preferences
 
-Finder: Open in home. View, options: Browse in col view.
+Finder
+
+- Preferences (Cmd-,): Open in: home
+- Click Finder window, View, options (Cmd-J): Untick browse in icon view. 
+- Click Desktop, View, options (Cmd-J): Sort by, Date Created
+- View, show status bar
 
 ## Installations
 
 ### Installer
 
-- XCode.app
 - VMware Fusion.app
 - iLife
 - Adobe CC
