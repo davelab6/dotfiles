@@ -174,7 +174,7 @@ Install cask and some apps
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
-        firefox firefox-nightly adobe-reader java insync captur;
+        firefox firefoxnightly adobe-reader java insync captur;
 
 Run KeepingYouAwake and set to run on login.
 
