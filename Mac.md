@@ -1,6 +1,6 @@
 # davelab6 installation notes for Mac OS X
 
-Here are steps I take when setting up a new mac with OS X 10.11.
+Here are steps I take when setting up a new mac with OS X 10.11
 
 ## Settings
 
