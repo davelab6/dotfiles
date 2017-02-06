@@ -139,7 +139,7 @@ a few tools,
 
     brew install hub bash-git-prompt wget irssi tree rename youtube-dl \
     irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck pngcrush \
-    optipng pandoc most ffmpeg libav imagemagick; 
+    optipng pandoc most ffmpeg libav imagemagick poppler; 
 
 Install fontforge python
 
