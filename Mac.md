@@ -153,6 +153,11 @@ Install command-not-found and upgrade bash,
     chsh -s /usr/local/bin/bash;
     brew install command-not-found;
 
+Install cask-upgrade,
+
+    brew tap buo/cask-upgrade;
+    brew update;
+
 Install quicklook plugins for better Finder previews,
 
     brew install \
@@ -177,7 +182,7 @@ Install cask and some apps
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
-        firefox firefoxnightly adobe-reader java insync captur obs;
+        firefox firefoxnightly adobe-reader java insync captur obs shiftit;
 
 Run KeepingYouAwake and set to run on login.
 
