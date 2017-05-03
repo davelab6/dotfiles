@@ -65,3 +65,7 @@ brew-cask-upgrade() {
     done
   done
 }
+
+# adb access, requires brew cask install android-studio-canary
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
