@@ -183,7 +183,7 @@ Install cask and some apps
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
         firefox firefoxnightly adobe-reader java insync captur obs shiftit \
-		android-studio-canary;
+		android-studio-canary riot slack;
 
 Run KeepingYouAwake and set to run on login.
 
