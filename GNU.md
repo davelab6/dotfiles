@@ -1,4 +1,4 @@
-# davelab6 dotfiles for Mac OS X
+# davelab6 dotfiles for GNU systems
 
 This repo contains some of my dotfile.
 Below are some notes I took when setting up a new trisquel 7 machine bought from GLUGLUG at Libre Planet 2014.
@@ -29,3 +29,24 @@ Below are some notes I took when setting up a new trisquel 7 machine bought from
 
     sudo easy_install pip;
     sudo pip install beautifulsoup4;
+
+## keyboard
+
+If using a Microsoft Natural Ergpnomic Keyboard 4000, set up the scroller in the center with
+
+    sudo udevadm hwdb --update;
+
+Insert:
+
+```
+keyboard:usb:v045Ep00DB*
+ KEYBOARD_KEY_0c022d=pageup
+ KEYBOARD_KEY_0c022e=pagedown
+```
+
+Then run
+
+    sudo udevadm hwdb --update;
+    sudo udevadm control --reload;
+
+And finally replug the USB connection :) 
