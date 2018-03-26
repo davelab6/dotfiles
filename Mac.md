@@ -11,11 +11,11 @@ Here are steps I take when setting up a new mac with OS X 10.11
 * Desktop: Black
 * Accessibility: Zoom, use Command, unset Smooth
 * Screensaver: Start after 5 mins. Show with clock. Set message to contact info:
-```
-dave@lab6.com
-@davelab6 
-+1 415 343 5226
-```
+
+    dave@lab6.com
+    @davelab6 
+    +1 415 343 5226
+
 * Dock: scale effect, autohide
 * Mission Control: Do not rearrange. Dashboard as space. Hot Corners, set bottom left to desktop, bottom right null, top right screensaver. 
 * Language: First day is Monday, check 24 hour time.
@@ -129,11 +129,6 @@ Install homebrew itself,
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
     sudo xcodebuild -license;
-
-spoofmac,
-
-    brew install spoof-mac;
-    sudo brew services start spoof-mac;
 
 a few tools,
 
