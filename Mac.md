@@ -168,15 +168,15 @@ Install cask and some apps
     brew tap caskroom/versions;
     brew cask install xquartz;
     brew cask install glyphs google-hangouts the-unarchiver inkscape gimp \
-        fontforge flycut dropbox audacity keepingyouawake chrome-devtools \
-        codekit cyberduck cocoadialog disk-inventory-x \
-        flux fontprep github-desktop githubpulse google-earth grandperspective \
+        fontforge flycut dropbox keepingyouawake chrome-devtools \
+        codekit cyberduck disk-inventory-x \
+        flux fontprep githubpulse google-earth-pro grandperspective \
         lighttable monolingual skyfonts robofont sequel-pro skim \
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
-        firefox firefoxnightly adobe-reader java insync captur obs shiftit \
-	android-studio-canary riot slack;
+        firefox firefox-nightly java insync captur obs shiftit \
+        riot slack;
 
 Run KeepingYouAwake and set to run on login.
 
