@@ -124,9 +124,17 @@ dave@lab6.com
 
 ### brew
 
-Install homebrew itself,
+Install homebrew itself, but into a home directory location, not the typical system location:
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+    cd ~;
+    mkdir homebrew;
+    curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew;
+
+Then append these lines to .bashrc
+
+    # Homebrew Paths
+    export PATH=$HOME/homebrew/bin:$PATH
+    export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 
 a few tools,
 
