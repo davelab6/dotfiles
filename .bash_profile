@@ -1,6 +1,8 @@
 alias wifimac='spoof-mac randomize wi-fi'
 export PATH=/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/Users/dcrossland/.local/bin:/usr/local/sbin:/usr/local/bin:$PATH
 alias chownlocal='/usr/bin/sudo /bin/chmod g+rwx /usr/local/. /usr/local/bin /usr/local/etc /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man5 /usr/local/share/man/man8 /usr/local/share/info /usr/local/share/doc; /usr/bin/sudo /usr/sbin/chown dcrossland /usr/local/. /usr/local/bin /usr/local/etc /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man5 /usr/local/share/man/man8 /usr/local/share/info /usr/local/share/doc; /usr/bin/sudo /usr/bin/chgrp admin /usr/local/. /usr/local/bin /usr/local/etc /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man5 /usr/local/share/man/man8 /usr/local/share/info /usr/local/share/doc; '
+export PATH=$HOME/homebrew/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 alias lint='java -jar /Users/dcrossland/googlefontdirectory/tools/lint/dist/lint.jar $1'
 export HISTFILESIZE=10000
 export EDITOR="mate -w"
