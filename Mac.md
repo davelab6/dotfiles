@@ -15,7 +15,7 @@ Here are steps I take when setting up a new mac with OS X 10.11
     +1 415 343 5226
 
 * Dock: scale effect, autohide
-* Mission Control: Do not rearrange. Dashboard as space. Hot Corners, set bottom left to desktop, bottom right null, top right screensaver. 
+* Mission Control: Do not rearrange. Dashboard as overlay. Hot Corners, set bottom left to desktop, bottom right null, top right screensaver. 
 * Language: First day is Monday, check 24 hour time, temperature is Celsius.
 * Display: Scaled, 4/5
 * Energy Saver: Schedule, sleep at 22:00 every day.
