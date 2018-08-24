@@ -7,9 +7,7 @@ Here are steps I take when setting up a new mac with OS X 10.11
 ### System Preferences
 
 * General: Highlight Color: Yellow. Ask to keep changes. Do not close windows. 
-* Display: Scaled, 4/5
 * Desktop: Black
-* Accessibility: Zoom, use Command, unset Smooth
 * Screensaver: Start after 5 mins. Show with clock. Set message to contact info:
 
     dave@lab6.com
@@ -18,10 +16,11 @@ Here are steps I take when setting up a new mac with OS X 10.11
 
 * Dock: scale effect, autohide
 * Mission Control: Do not rearrange. Dashboard as space. Hot Corners, set bottom left to desktop, bottom right null, top right screensaver. 
-* Language: First day is Monday, check 24 hour time.
+* Language: First day is Monday, check 24 hour time, temperature is Celsius.
+* Display: Scaled, 4/5
 * Energy Saver: Schedule, sleep at 22:00 every day.
 * Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, set Caps Lock to Command; Shortcut, all controls. If UK machine, Input Sources, add British, remove US.
-* Trackpad: Tap to click on, Look up off, Swipe between pages with 3 fingers, Swipe between full-screen app off, Notification Center off
+* Trackpad: Look up off, Tap to click on, Swipe between pages with 3 fingers, Swipe between full-screen app off, Notification Center off
 * Date and Time: Set timezone, use 24 hour clock, show date
 * Accessibility: Zoom, Yes use scroll gesture (Command), no smoothing, yes follow
 
@@ -125,20 +124,27 @@ dave@lab6.com
 
 ### brew
 
-Install homebrew itself,
+Install homebrew itself, but into a home directory location, not the typical system location:
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
-    sudo xcodebuild -license;
+    cd ~;
+    mkdir homebrew;
+    curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C homebrew;
+
+Then append these lines to .bashrc
+
+    # Homebrew Paths
+    export PATH=$HOME/homebrew/bin:$PATH
+    export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 
 a few tools,
 
     brew install hub bash-git-prompt wget irssi tree rename youtube-dl \
-    irssi homebrew/gui/meld httrack jpegoptim watch icdiff thefuck pngcrush \
+    irssi httrack jpegoptim watch icdiff thefuck pngcrush \
     optipng pandoc most ffmpeg libav imagemagick poppler; 
 
 Install fontforge python
 
-    brew install fontforge --HEAD --with-giflib --with-extra-tools;
+    brew install fontforge --with-giflib --with-extra-tools;
 
 Install command-not-found and upgrade bash,
 
@@ -156,7 +162,7 @@ Install cask-upgrade,
 Install quicklook plugins for better Finder previews,
 
     brew install \
-    Caskroom/cask/animated-gif-quicklook     Caskroom/cask/quicklook-json        \
+    Caskroom/cask/quicklook-json \
     Caskroom/cask/emin-webpquicklook         Caskroom/cask/quicklook-pfm         \
     Caskroom/cask/epubquicklook              Caskroom/cask/quicklookei           \
     Caskroom/cask/osirix-quicklook           Caskroom/cask/ttscoff-mmd-quicklook \
@@ -170,15 +176,15 @@ Install cask and some apps
     brew tap caskroom/versions;
     brew cask install xquartz;
     brew cask install glyphs google-hangouts the-unarchiver inkscape gimp \
-        fontforge flycut dropbox audacity keepingyouawake chrome-devtools \
-        codekit cyberduck cocoadialog disk-inventory-x \
-        flux fontprep github-desktop githubpulse google-earth grandperspective \
+        fontforge flycut dropbox keepingyouawake chrome-devtools \
+        codekit cyberduck disk-inventory-x \
+        flux fontprep githubpulse google-earth-pro grandperspective \
         lighttable monolingual skyfonts robofont sequel-pro skim \
         skype snapz-pro-x sparkleshare the-unarchiver unrarx vlc calibre \
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
-        firefox firefoxnightly adobe-reader java insync captur obs shiftit \
-		android-studio-canary riot slack;
+        firefox firefox-nightly java insync captur obs shiftit \
+        riot slack;
 
 Run KeepingYouAwake and set to run on login.
 
@@ -227,7 +233,9 @@ I keep some handy symlinks in my home, and links to files stored in this repo:
 
 ## python
 
-    pip install --user --upgrade beautifulsoup4 Mercurial ipython ipdb;
+    sudo easy_install pip;
+    pip2 install --user Mercurial;
+    pip3 install --user --upgrade beautifulsoup4 ipython ipdb;
 
 ## font toolbox
 
@@ -245,19 +253,20 @@ Install `osxfonttools.dmg` from http://developer.apple.com
 
 Install basic web font tools:
 
-    brew tap davelab6/webfonttools; 
+    brew cask install java;
+    brew tap bramstein/webfonttools; 
     brew update; 
     brew install sfnt2woff sfnt2woff-zopfli woff2 ttf2eot sfntly vfb2ufo;
     brew install ots --HEAD;
 
 Install fonttools from git master:
 
-    sudo pip install git+git://github.com/behdad/fonttools.git;
+    sudo pip3 install --user git+git://github.com/behdad/fonttools.git;
 
 Install pyfontaine:
 
-    sudo CFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib pip install pyicu;
-    sudo pip install git+git://github.com/davelab6/pyfontaine.git;
+    sudo CFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib pip2 install pyicu;
+    sudo pip2 install --user git+git://github.com/davelab6/pyfontaine.git;
 
 Install fontbakery from git master:
 
