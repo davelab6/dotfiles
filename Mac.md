@@ -19,7 +19,7 @@ Here are steps I take when setting up a new mac with OS X 10.11
 * Language: First day is Monday, check 24 hour time, temperature is Celsius.
 * Display: Scaled, 4/5
 * Energy Saver: Schedule, sleep at 22:00 every day.
-* Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, set Caps Lock to Command; Shortcut, all controls. If UK machine, Input Sources, add British, remove US.
+* Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, set Caps Lock to Command; Shortcut, all controls. If UK machine, Input Sources, add British, remove US. Remove Siri from touchbar.
 * Trackpad: Look up off, Tap to click on, Swipe between pages with 3 fingers, Swipe between full-screen app off, Notification Center off
 * Date and Time: Set timezone, use 24 hour clock, show date
 * Accessibility: Zoom, Yes use scroll gesture (Command), no smoothing, yes follow
