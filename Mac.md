@@ -16,13 +16,15 @@ Here are steps I take when setting up a new mac with OS X 10.11
 
 * Dock: scale effect, autohide
 * Mission Control: Do not rearrange. Dashboard as overlay. Hot Corners, set bottom left to desktop, bottom right null, top right screensaver. 
+* Siri: Disable
 * Language: First day is Monday, check 24 hour time, temperature is Celsius.
-* Display: Scaled, 4/5
+* Display: Scaled, 5/5; nightshift on sunset-to-sunrise. 
 * Energy Saver: Schedule, sleep at 22:00 every day.
 * Keyboard: Do not adjust key brightness; Show keyboard in menubar; Modifers, set Caps Lock to Command; Shortcut, all controls. If UK machine, Input Sources, add British, remove US. Remove Siri from touchbar.
 * Trackpad: Look up off, Tap to click on, Swipe between pages with 3 fingers, Swipe between full-screen app off, Notification Center off
 * Date and Time: Set timezone, use 24 hour clock, show date
 * Accessibility: Zoom, Yes use scroll gesture (Command), no smoothing, yes follow
+
 
 Terminal - to enable alt-arrows to move words, alt-d to delete next word, go to Preference, Profiles, Keyboard, and set Use Option Key as Meta
 
@@ -101,21 +103,34 @@ Enable `locate`
 
 Finder
 
-- Preferences (Cmd-,): Open in: home
-- Click Finder window, View, options (Cmd-J): Untick browse in icon view. 
-- Click Desktop, View, options (Cmd-J): Sort by, Date Created
+- Preferences (Cmd-,): New Finder windows show: home. Advanced, search in Current folder.
+- Click Finder window (home), View, options (Cmd-J): Tick browse in icon view, show Library folder.
+- Click Desktop, View, options (Cmd-J): Sort by, Date Created; Icons, 16x16; Grid spacing, Max. 
 - View, show status bar
+
+Music
+
+- Preferences, Restrictions, iTunes Store (to check all)
 
 ## Installations
 
 ### Installer
 
-- VMware Fusion.app
 - iLife
 - Adobe CC
-- FontLab 5.x
-
-Run FontLab and register it.
+- GIMP
+- Google Chrome Canary
+- Inkscape
+- iTerm2
+- Keynote
+- LibreOffice
+- Microsoft Word
+- rsync 3
+- Sketch (Mac)
+- Spotify
+- TextMate
+- VLC media player
+- WhatsApp
 
 ### App Store
 
