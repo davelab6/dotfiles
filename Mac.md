@@ -186,11 +186,10 @@ Install quicklook plugins for better Finder previews,
 
 ### casks
 
-Install cask and some apps
+Install some apps via Homebrew Casks:
 
-    brew tap caskroom/versions;
-    brew cask install xquartz;
-    brew cask install glyphs google-hangouts the-unarchiver inkscape gimp \
+    brew install xquartz;
+    brew install glyphs google-hangouts the-unarchiver inkscape gimp \
         fontforge flycut dropbox keepingyouawake chrome-devtools \
         codekit cyberduck disk-inventory-x \
         flux fontprep githubpulse google-earth-pro grandperspective \
@@ -199,7 +198,7 @@ Install cask and some apps
         coconutbattery ipartition ntfsmounter unicodechecker macdown quicksilver \
         captur textmate opera libreoffice google-chrome google-chrome-canary \
         firefox firefox-nightly java insync captur obs shiftit \
-        riot slack;
+        riot slack fontgoogles;
 
 Run KeepingYouAwake and set to run on login.
 
