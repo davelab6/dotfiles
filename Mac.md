@@ -139,6 +139,10 @@ dave@lab6.com
 
 ### brew
 
+Install command line developer tools
+
+    sudo xcode-select --install;
+
 Install homebrew itself, but into a home directory location, not the typical system location:
 
     cd ~;
