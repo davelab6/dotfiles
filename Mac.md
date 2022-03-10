@@ -86,6 +86,10 @@ Dont blink caret
 
     defaults write -g NSTextInsertionPointBlinkPeriod -int 9999999999999999;
 
+Repeat keypresses
+
+    defaults write -g ApplePressAndHoldEnabled -bool false
+
 Finder prefs: Open in Home, Search in current folder
 
 Enable `locate`
