@@ -50,3 +50,7 @@ Then run
     sudo udevadm control --reload;
 
 And finally replug the USB connection :) 
+
+## applications
+
+* [gitlab.com/screenkey/screenkey](https://gitlab.com/screenkey/screenkey)
